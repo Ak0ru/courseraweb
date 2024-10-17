@@ -1,0 +1,55 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.section {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #e2e2e2;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/* Десктопный вид (992px и выше) */
+@media (min-width: 992px) {
+    .section {
+        width: 30%;
+        float: left;
+    }
+}
+
+/* Планшетный вид (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 45%;
+    }
+    .section:nth-child(3) {
+        width: 100%;
+    }
+}
+
+/* Мобильный вид (меньше или равно 767px) */
+@media (max-width: 767px) {
+    .section {
+        width: 100%;
+    }
+}
